@@ -14,6 +14,12 @@
 		025A058C292719CC004F25AF /* ElevationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025A058B292719CC004F25AF /* ElevationTests.swift */; };
 		025A0596292719CD004F25AF /* ElevationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025A0595292719CD004F25AF /* ElevationUITests.swift */; };
 		025A0598292719CD004F25AF /* ElevationUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025A0597292719CD004F25AF /* ElevationUITestsLaunchTests.swift */; };
+		025A05A5292743B5004F25AF /* GameBoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025A05A4292743B5004F25AF /* GameBoardView.swift */; };
+		025A05A9295E25FD004F25AF /* Space.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025A05A8295E25FD004F25AF /* Space.swift */; };
+		025A05AB295E2E18004F25AF /* SpaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025A05AA295E2E18004F25AF /* SpaceView.swift */; };
+		025A05AD295E495C004F25AF /* GameBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025A05AC295E495B004F25AF /* GameBoard.swift */; };
+		02876B7E29622C4E00A76F88 /* GameBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025A05AC295E495B004F25AF /* GameBoard.swift */; };
+		02876B7F29622D3700A76F88 /* Space.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025A05A8295E25FD004F25AF /* Space.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +51,10 @@
 		025A0591292719CD004F25AF /* ElevationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ElevationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		025A0595292719CD004F25AF /* ElevationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElevationUITests.swift; sourceTree = "<group>"; };
 		025A0597292719CD004F25AF /* ElevationUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElevationUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		025A05A4292743B5004F25AF /* GameBoardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameBoardView.swift; sourceTree = "<group>"; };
+		025A05A8295E25FD004F25AF /* Space.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Space.swift; sourceTree = "<group>"; };
+		025A05AA295E2E18004F25AF /* SpaceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceView.swift; sourceTree = "<group>"; };
+		025A05AC295E495B004F25AF /* GameBoard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameBoard.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +107,10 @@
 			children = (
 				025A0579292719C7004F25AF /* ElevationApp.swift */,
 				025A057B292719C7004F25AF /* ContentView.swift */,
+				025A05AC295E495B004F25AF /* GameBoard.swift */,
+				025A05A4292743B5004F25AF /* GameBoardView.swift */,
+				025A05A8295E25FD004F25AF /* Space.swift */,
+				025A05AA295E2E18004F25AF /* SpaceView.swift */,
 				025A057D292719CC004F25AF /* Assets.xcassets */,
 				025A057F292719CC004F25AF /* Elevation.entitlements */,
 				025A0580292719CC004F25AF /* Preview Content */,
@@ -260,7 +274,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				025A057C292719C7004F25AF /* ContentView.swift in Sources */,
+				025A05A9295E25FD004F25AF /* Space.swift in Sources */,
+				025A05AD295E495C004F25AF /* GameBoard.swift in Sources */,
 				025A057A292719C7004F25AF /* ElevationApp.swift in Sources */,
+				025A05AB295E2E18004F25AF /* SpaceView.swift in Sources */,
+				025A05A5292743B5004F25AF /* GameBoardView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,7 +286,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				02876B7E29622C4E00A76F88 /* GameBoard.swift in Sources */,
 				025A058C292719CC004F25AF /* ElevationTests.swift in Sources */,
+				02876B7F29622D3700A76F88 /* Space.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -415,6 +435,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Elevation/Preview Content\"";
+				DEVELOPMENT_TEAM = G6GBMMYJ9P;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
@@ -427,7 +448,7 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 12.6;
@@ -451,6 +472,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Elevation/Preview Content\"";
+				DEVELOPMENT_TEAM = G6GBMMYJ9P;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
@@ -463,7 +485,7 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 12.6;
@@ -483,10 +505,12 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = C38GC4E8XP;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				MACOSX_DEPLOYMENT_TARGET = 12.6;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = xemplify.ElevationTests;
@@ -505,10 +529,12 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = C38GC4E8XP;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				MACOSX_DEPLOYMENT_TARGET = 12.6;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = xemplify.ElevationTests;
@@ -528,8 +554,9 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = C38GC4E8XP;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				MACOSX_DEPLOYMENT_TARGET = 12.6;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = xemplify.ElevationUITests;
@@ -549,8 +576,9 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = C38GC4E8XP;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				MACOSX_DEPLOYMENT_TARGET = 12.6;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = xemplify.ElevationUITests;
